@@ -1,0 +1,16 @@
+@import (reference) "./palette.less";
+
+.bajaux-widget .LiveChartView {
+  .live-chart-column .highcharts-axis.highcharts-xaxis path {
+    stroke: @fg-color !important;
+  }
+
+  .highcharts-grid {
+    &.highcharts-xaxis-grid,
+    &.highcharts-yaxis-grid {
+      path {
+        stroke: @fg-color !important;
+      }
+    }
+  }
+}
