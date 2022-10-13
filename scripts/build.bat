@@ -46,7 +46,7 @@ IF %ERRORLEVEL% NEQ 0 (
    exit %ERRORLEVEL% 
 )
 
-call "..\.lib\gradlew.bat" build
+call "..\.lib\gradlew.bat" jar
 IF %ERRORLEVEL% NEQ 0 ( 
    exit %ERRORLEVEL% 
 )
