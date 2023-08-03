@@ -1,9 +1,13 @@
-@import './fonts.less';
-@import (reference) './palette.less';
+@import "./fonts.less";
+@import (reference) "./palette.less";
 /*
  Theme Rules for use with jquery.ContextMenu
 */
 // Context menu ////////////////////////////////////////////////////////////////
+
+div#WebShell-toolbar {
+  display: none;
+}
 
 ul.context-menu-list {
   .border-radius(6px);
@@ -14,7 +18,7 @@ ul.context-menu-list {
   padding: 8px 12px;
   border: 0;
 
-  &#_hxMenu .icon{
+  &#_hxMenu .icon {
     display: none;
   }
 
@@ -29,7 +33,7 @@ ul.context-menu-list {
     .context-menu-item .icon {
       display: none;
     }
-    
+
     margin-left: -12px;
     padding-left: 14px;
 
@@ -40,7 +44,7 @@ ul.context-menu-list {
       margin-right: -12px;
       padding-right: 14px;
     }
-    
+
     &.context-menu-disabled {
       color: @neutral-4;
       background-color: @context-menu-bg;
